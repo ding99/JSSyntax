@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>Activate Debugging and Print</h2>
+
+        <p>F12 on our keyboard will activate dubugging.</p>
+        <p>Then select "Console" in the debugger menu.</p>
+        <p>Then click Run again.</p>
+
+        <script>
+            console.log(5 + 6);
+        </script>
+
+        <button onclick="window.print()">Print this page</button>
+
+        <p id = "demo"></p>
+        <script>
+            var x, y, z;
+            x = 5; y = 6; z = x + y;
+            document.getElementById("demo").innerHTML = "The value of z (" + x + " + " + y +") is " + z + ".";
+        </script>
+    </body>
+</html>
