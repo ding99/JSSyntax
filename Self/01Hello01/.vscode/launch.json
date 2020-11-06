@@ -5,10 +5,11 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Run Hello",
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome against localhost",
-            "url": "file:///D:/ProG/JSSyntax/Self/01Hello01/hello.html",
+//            "url": "file:///D:/ProG/JSSyntax/Self/01Hello01/hello.html",
+            "url": "${workspaceFolder}/hello.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
