@@ -7,19 +7,28 @@
 <body>
 
 <p> typeof 操作符返回变量、对象、函数、表达式的类型。</p>
+<p> constructor 属性返回变量或对象的构造函数。</p>
 <p id="demo"></p>
 <script>
 document.getElementById("demo").innerHTML = 
-    "typeof 'john' \t: " + typeof "john" + "<br>" +
-    "typeof 3.14 \t: " + typeof 3.14 + "<br>" +
-    "typeof NaN \t: " + typeof NaN + "<br>" +
-    "typeof false \t: " + typeof false + "<br>" +
-    "typeof [1,2,3,4] \t: " + typeof [1,2,3,4] + "<br>" +
-    "typeof {name:'john', age:34} \t: " + typeof {name:'john', age:34} + "<br>" +
-    "typeof new Date() \t: " + typeof new Date() + "<br>" +
-    "typeof 'john' \t: " + typeof function () {} + "<br>" +
-    "typeof myCar \t: " + typeof myCar + "<br>" +
-    "typeof null \t: " + typeof null;
+    "typeof 'john' : " + typeof "john" + "<br>" +
+    "typeof 3.14 : " + typeof 3.14 + "<br>" +
+    "typeof NaN : " + typeof NaN + "<br>" +
+    "typeof false : " + typeof false + "<br>" +
+    "typeof [1,2,3,4] : " + typeof [1,2,3,4] + "<br>" +
+    "typeof {name:'john', age:34} : " + typeof {name:'john', age:34} + "<br>" +
+    "typeof new Date() : " + typeof new Date() + "<br>" +
+    "typeof function () {} : " + typeof function () {} + "<br>" +
+    "typeof myCar : " + typeof myCar + "<br>" +
+    "typeof null : " + typeof null + "<br><br>" +
+    "'john'.constructor : " + "john".constructor + "<br>" +
+    "(3.14).constructor : " + (3.14).constructor + "<br>" +
+    "NaN.constructor : " + NaN.constructor + "<br>" +
+    "false.constructor : " + false.constructor + "<br>" +
+    "[1,2,3,4].constructor : " + [1,2,3,4].constructor + "<br>" +
+    "{name:'john', age:34}.constructor : " + {name:'john', age:34}.constructor + "<br>" +
+    "new Date().constructor : " + new Date().constructor + "<br>" +
+    "function () {}.constructor : " + function () {}.constructor + "<br>";
 </script>
 
 </body>
